@@ -8,7 +8,7 @@ console.log("welcome " + userName + " Let's see how much you know about Human Bo
 function play(question, answer) {
   var userAns = readlineSync.question(question);
 
-  if (userAns === answer) {
+  if (userAns.toUpperCase() === answer.toUpperCase()) {
     console.log("Right Answer");
     score++;
   }
